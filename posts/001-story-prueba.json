@@ -3,7 +3,10 @@
   "fecha_utc": "2026-10-19T15:00:00Z",
   "tipo": "story",
   "caption": "",
-  "medios": ["se-buscan-deportistas.jpg"],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "medios": [
+    "se-buscan-deportistas.jpg"
+  ],
+  "estado": "publicado",
+  "media_id_publicado": "18210170020367833",
+  "publicado_utc": "2026-10-18T19:55:36Z"
 }
