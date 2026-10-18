@@ -1,0 +1,45 @@
+name: Renovar token de Instagram
+
+# El token dura 60 dias. Se renueva los dias 1 y 15 de cada mes (12:00 UTC).
+# Para que sea automatico hace falta el secret GH_PAT en el environment "Instagram Env":
+# un fine-grained token de GitHub, solo para este repo, con permiso "Secrets" y "Environments" en read/write.
+# Sin GH_PAT, el workflow abre un issue recordando renovarlo a mano (README, seccion "Renovar el token").
+on:
+  schedule:
+    - cron: "0 12 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  renovar:
+    runs-on: ubuntu-latest
+    environment: Instagram Env
+    env:
+      INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+      INSTAGRAM_USER_ID: ${{ vars.INSTAGRAM_USER_ID }}
+      GH_PAT: ${{ secrets.GH_PAT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Renovar y guardar el secret
+        if: ${{ env.GH_PAT != '' }}
+        run: |
+          python publisher.py refresh-token --guardar-env "$RUNNER_TEMP/ig.env"
+          nuevo=$(grep '^INSTAGRAM_ACCESS_TOKEN=' "$RUNNER_TEMP/ig.env" | cut -d= -f2-)
+          echo "::add-mask::$nuevo"
+          test -n "$nuevo"
+          GH_TOKEN="$GH_PAT" gh secret set INSTAGRAM_ACCESS_TOKEN --env "Instagram Env" --repo "$GITHUB_REPOSITORY" --body "$nuevo"
+          rm -f "$RUNNER_TEMP/ig.env"
+      - name: Sin GH_PAT, avisar con un issue
+        if: ${{ env.GH_PAT == '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "Renovar el token de Instagram ($(date +%d/%m/%Y))" \
+            --body "El token vence a los 60 dias. Corre local: python publisher.py refresh-token --guardar-env .env y actualiza el secret INSTAGRAM_ACCESS_TOKEN del environment Instagram Env. Para que esto sea automatico, carga el secret GH_PAT (ver renovar-token.yml)."

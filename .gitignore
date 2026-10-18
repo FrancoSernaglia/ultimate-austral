@@ -2,4 +2,8 @@
 __pycache__/
 *.pyc
 *.tmp
-.claude/
+.claude/settings.local.json
+
+# Contexto privado: el repo es publico
+contexto/memoria.md
+contexto/diagnostico-inicial.md
