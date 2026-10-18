@@ -1,0 +1,9 @@
+{
+  "id": "002-ejemplo-imagen",
+  "fecha_utc": "2026-10-23T20:00:00Z",
+  "tipo": "imagen",
+  "caption": "Ultimate Austral abre sus puertas 🥏\nViernes 17 hs y sábados 16 hs en la Universidad Austral (Pilar). Sin experiencia previa, vení a probar.\n\n#ultimatefrisbee #austral",
+  "medios": ["practica_viernes.jpg"],
+  "estado": "pendiente",
+  "media_id_publicado": null
+}

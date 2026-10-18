@@ -1,0 +1,9 @@
+{
+  "id": "001-story-prueba",
+  "fecha_utc": "2026-10-19T15:00:00Z",
+  "tipo": "story",
+  "caption": "",
+  "medios": ["se-buscan-deportistas.jpg"],
+  "estado": "pendiente",
+  "media_id_publicado": null
+}

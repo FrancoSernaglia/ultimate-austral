@@ -1,0 +1,64 @@
+name: Publicar en Instagram
+
+# Los cron de GitHub corren en UTC. Argentina es UTC-3 (sin horario de verano).
+# "7 * * * *" = minuto 7 de cada hora. La pieza sale en la primera corrida posterior a su fecha_utc.
+# Ej.: para que salga a las 17:00 ART, poner fecha_utc "20:00:00Z".
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+    inputs:
+      publicar:
+        description: "Publicar de verdad (ademas requiere la variable PUBLICAR_REAL=true)"
+        type: boolean
+        default: false
+      id:
+        description: "ID de una pieza puntual (opcional; ignora la fecha)"
+        required: false
+        type: string
+  push:
+    paths: ["publisher.py", "tests/**", "posts/**"]
+
+concurrency:
+  group: publicar-instagram
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests -v
+      - run: python publisher.py validate
+
+  publicar:
+    needs: tests
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    env:
+      INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+      INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+      PIEZA_ID: ${{ inputs.id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dry-run (siempre)
+        run: python publisher.py dry-run ${PIEZA_ID:+--id "$PIEZA_ID"}
+      - name: Publicar (solo con PUBLICAR_REAL=true; en manual ademas hay que marcar "publicar")
+        if: ${{ vars.PUBLICAR_REAL == 'true' && (github.event_name == 'schedule' || inputs.publicar) }}
+        run: python publisher.py publish --confirmar ${PIEZA_ID:+--id "$PIEZA_ID"}
+      - name: Commit del estado
+        if: ${{ always() }}
+        run: |
+          git config user.name "publisher-bot"
+          git config user.email "publisher-bot@users.noreply.github.com"
+          git add posts
+          git diff --cached --quiet || (git commit -m "Actualizar estado de publicaciones [skip ci]" && git push)
