@@ -6,6 +6,10 @@ name: Publicar en Instagram
 on:
   schedule:
     - cron: "7 * * * *"
+    # GitHub posterga o saltea crons con carga alta (en oct-2026 salian cada 4-6 h). Corridas extra
+    # justo despues de los horarios de la rutina: mar/jue 19:00 ART (22 UTC) y vie/sab 10:00 ART (13 UTC).
+    - cron: "11,23,41 22 * * 2,4"
+    - cron: "11,23,41 13 * * 5,6"
   workflow_dispatch:
     inputs:
       publicar:
