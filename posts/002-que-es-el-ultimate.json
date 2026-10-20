@@ -6,6 +6,7 @@
   "medios": [
     "piezas/002-que-es-el-ultimate.jpg"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "18059540336639303",
+  "publicado_utc": "2026-10-20T23:49:33Z"
 }
