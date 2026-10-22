@@ -6,6 +6,7 @@
   "medios": [
     "piezas/003-sin-experiencia.jpg"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "18117212995822157",
+  "publicado_utc": "2026-10-22T23:17:50Z"
 }
