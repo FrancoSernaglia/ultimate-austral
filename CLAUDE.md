@@ -27,4 +27,5 @@ Los scripts (hookscore, detect, humanize) están calibrados en inglés: en espa�
 Desde el 18/10/2026 Franco pidió que la cuenta se gestione sola, sin aprobación previa. Cada domingo una rutina en la nube sigue `contexto/instagram/rutina.md`: arma la semana en `posts/` (con imágenes de `herramientas/armar_imagen.py` en `media/piezas/`) y pushea a `main`; GitHub Actions publica cada pieza cuando llega su `fecha_utc`.
 - `contexto/agenda.md` manda sobre fechas y horarios; solo se anuncia lo `confirmada`.
 - Pausa: crear un archivo `PAUSA` en la raíz (frena la rutina) o poner `PUBLICAR_REAL=false` en el environment "Instagram Env" (frena Actions).
-- Fotos: solo de `media/banco/` (stock, ver `CREDITOS.md`) o fotos propias que el equipo suba con permiso de quienes aparecen.
+- Fotos: solo de `media/banco/` (stock, ver `CREDITOS.md`) o material propio de `media/propias/listas/` (ver `media/propias/CATALOGO.md`).
+- Material propio: Franco lo sube a OneDrive (`Austral Ultimate/`, y a `con-permiso/` lo que se puede publicar). Cada domingo a las 8:00 una tarea local sigue `contexto/instagram/importar-propias.md`: copia a `media/propias/crudos/` (fuera de git), califica en el catálogo y deja clips y fotos limpios en `listas/`.

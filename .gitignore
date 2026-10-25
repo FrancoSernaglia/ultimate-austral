@@ -7,3 +7,7 @@ __pycache__/
 # Contexto privado: el repo es publico
 contexto/memoria.md
 contexto/diagnostico-inicial.md
+
+# Material propio: crudos y previews quedan locales (caras sin editar, archivos pesados)
+media/propias/crudos/
+media/propias/previews/
