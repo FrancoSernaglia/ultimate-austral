@@ -1,6 +1,6 @@
 # Material propio
 
-Fotos y videos del equipo. Los sube Franco a OneDrive (`Austral Ultimate/`); cada domingo a las 8:00 una tarea local (`contexto/instagram/importar-propias.md`) los copia a `media/propias/crudos/`, los califica acá y prepara versiones limpias en `media/propias/listas/`. La rutina de la nube de las 10:00 arma las piezas a partir de `listas/`.
+Fotos y videos del equipo. Los sube Franco a OneDrive (`Austral Ultimate/`); cada domingo a las 8:00 una tarea local (`contexto/instagram/importar-propias.md`) los copia a `media/propias/crudos/`, los califica acá y prepara versiones limpias en `media/propias/listas/`. La rutina local de las 14:00 arma las piezas a partir de `listas/`.
 
 - **Crudos y previews no van a git** (repo público, caras sin editar, archivos pesados). Viven solo en la PC de Franco y en OneDrive.
 - **Permiso:** solo lo que está en `Austral Ultimate/con-permiso/` se publica. El resto se cataloga y espera.

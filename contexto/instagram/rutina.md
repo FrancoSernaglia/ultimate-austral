@@ -1,6 +1,6 @@
 # Rutina semanal de Instagram (@ultimate.austral)
 
-Corre los domingos a la mañana en la nube. Deja programada la semana que arranca el lunes. Publica sin aprobación previa de Franco (lo pidió el 18/10/2026); el control es este archivo, la agenda y el botón de pausa.
+Corre los domingos a las 14:00 como tarea programada local en la PC de Franco (`austral-instagram-semana` en la app de Claude; la rutina de la nube quedó pausada el 27/10/2026 porque su cuenta de GitHub no puede pushear al repo). Deja programada la semana que arranca el lunes. Publica sin aprobación previa de Franco (lo pidió el 18/10/2026); el control es este archivo, la agenda y el botón de pausa.
 
 ## 0. Antes de nada
 

@@ -24,7 +24,7 @@ Los scripts (hookscore, detect, humanize) están calibrados en inglés: en espa�
 
 ## Publicación autónoma
 
-Desde el 18/10/2026 Franco pidió que la cuenta se gestione sola, sin aprobación previa. Cada domingo una rutina en la nube sigue `contexto/instagram/rutina.md`: arma la semana en `posts/` (con imágenes de `herramientas/armar_imagen.py` en `media/piezas/`) y pushea a `main`; GitHub Actions publica cada pieza cuando llega su `fecha_utc`.
+Desde el 18/10/2026 Franco pidió que la cuenta se gestione sola, sin aprobación previa. Cada domingo a las 14:00 una tarea programada local (`austral-instagram-semana`, en la PC de Franco) sigue `contexto/instagram/rutina.md`: arma la semana en `posts/` (con imágenes de `herramientas/armar_imagen.py` en `media/piezas/`) y pushea a `main`; GitHub Actions publica cada pieza cuando llega su `fecha_utc`.
 - `contexto/agenda.md` manda sobre fechas y horarios; solo se anuncia lo `confirmada`.
 - Pausa: crear un archivo `PAUSA` en la raíz (frena la rutina) o poner `PUBLICAR_REAL=false` en el environment "Instagram Env" (frena Actions).
 - Fotos: solo de `media/banco/` (stock, ver `CREDITOS.md`) o material propio de `media/propias/listas/` (ver `media/propias/CATALOGO.md`).

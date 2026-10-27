@@ -1,6 +1,6 @@
 # Importar material propio (domingos 8:00, en la PC de Franco)
 
-Corre como tarea programada local de la app de Claude, porque la rutina de la nube no ve OneDrive. Tiene que terminar antes de las 10:00 ART, que es cuando la rutina de la nube arma la semana con lo que haya en `media/propias/listas/`.
+Corre como tarea programada local de la app de Claude, porque OneDrive solo está en esa PC. Tiene que terminar antes de las 14:00 ART, que es cuando la tarea local `austral-instagram-semana` arma la semana con lo que haya en `media/propias/listas/`.
 
 Python: `"$LOCALAPPDATA/Microsoft/WindowsApps/python3.11.exe" -X utf8` (abajo, `PY`). Dependencias: `PY -m pip install -q pillow imageio-ffmpeg`.
 
