@@ -6,6 +6,7 @@
   "medios": [
     "piezas/006-que-es-un-layout.jpg"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "18018629645957250",
+  "publicado_utc": "2026-10-27T22:57:19Z"
 }
