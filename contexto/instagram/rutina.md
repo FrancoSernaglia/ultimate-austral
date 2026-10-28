@@ -5,7 +5,7 @@ Corre los domingos a las 14:00 como tarea programada local en la PC de Franco (`
 ## 0. Antes de nada
 
 1. `git pull`. Si existe el archivo `PAUSA` en la raíz del repo, no hagas nada y terminá.
-2. Leé `CLAUDE.md`, `contexto/agenda.md`, `contexto/instagram-voice.md`, `contexto/instagram/log.md`, `media/banco/CREDITOS.md` y `media/propias/CATALOGO.md`.
+2. Leé `CLAUDE.md`, `contexto/agenda.md`, `contexto/instagram-voice.md`, `contexto/instagram/log.md`, `media/banco/CREDITOS.md`, `media/banco-cc/CREDITOS.md` y `media/propias/CATALOGO.md`.
 3. Revisá `posts/`: piezas en `error` (anotá el mensaje en el log y no las toques) y piezas `pendiente` de la semana (no las dupliques).
 
 ## 1. Ritmo
@@ -27,6 +27,7 @@ Corre los domingos a las 14:00 como tarea programada local en la PC de Franco (`
 1. Elegí el material, en este orden:
    - **Propio:** un archivo de `media/propias/listas/` cuya ficha en `media/propias/CATALOGO.md` diga `Permiso: sí` y que no se haya usado en las últimas 4 semanas (campo `Usado` y log). Preferí puntaje 4 o 5 y respetá los `Usos` de la ficha.
    - **Stock:** si no hay propio que sirva, una foto de `media/banco/` que no se haya usado en las últimas 4 semanas.
+   - **Creative Commons:** si el stock no alcanza, una foto de `media/banco-cc/` (mismo criterio de 4 semanas). El caption **debe** terminar con la atribución de su `CREDITOS.md`: "Foto: <autor> / Wikimedia Commons / <licencia>". Sin ese crédito no se usa.
    Lo que está en `media/propias/crudos/` o fuera de `listas/` no existe para vos (no está en el repo y no tiene permiso confirmado).
 2. Imagen (foto del banco o de `listas/`): `pip install pillow` y
    `python herramientas/armar_imagen.py media/banco/<foto>.jpg --formato feed|story --titulo "..." --subtitulo "..." --out media/piezas/<id>.jpg`
@@ -42,7 +43,7 @@ Corre los domingos a las 14:00 como tarea programada local en la PC de Franco (`
 ## 3. Reglas duras (si una pieza no las cumple, no sale)
 
 - Nunca decir que somos equipo oficial de la Universidad Austral, ni usar su logo. "En la Universidad Austral" o "en el Parque Empresarial Austral" para el lugar está bien.
-- Las fotos de `media/banco/` son de stock: nunca "esta es nuestra práctica", "así entrenamos nosotros" ni nada que haga pasar a esas personas por el equipo.
+- Las fotos de `media/banco/` y `media/banco-cc/` son de terceros: nunca "esta es nuestra práctica", "así entrenamos nosotros" ni nada que haga pasar a esas personas por el equipo.
 - El material de `media/propias/listas/` sí es del equipo: ahí está bien "nuestra práctica", "así son los viernes". Pero nada de inventar sobre él: si la ficha no dice cuándo o dónde se filmó, no lo afirmes, y no digas cuánta gente vino ni quiénes son.
 - Si en el material propio se ven solo varones (lo dice la ficha), el texto invita a mujeres en forma explícita.
 - Nunca inventar números, nombres, resultados, torneos ni testimonios. Solo lo que está en la agenda o en la voz. Si falta un dato, cambiá el ángulo.
