@@ -6,6 +6,7 @@
   "medios": [
     "piezas/007-veni-a-probar.jpg"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "18113257838622791",
+  "publicado_utc": "2026-10-30T00:50:58Z"
 }
