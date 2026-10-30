@@ -6,6 +6,7 @@
   "medios": [
     "piezas/008-story-viernes.jpg"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "17954126082276003",
+  "publicado_utc": "2026-10-30T14:03:16Z"
 }
