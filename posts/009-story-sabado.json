@@ -6,6 +6,7 @@
   "medios": [
     "piezas/009-story-sabado.jpg"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "18103455074544298",
+  "publicado_utc": "2026-10-31T17:40:53Z"
 }
