@@ -11,3 +11,7 @@ Una línea por pieza: fecha de publicación (ART) · id · formato · tema · fo
 - 2026-10-29 19:00 · 007-veni-a-probar · imagen · invitar: mixto, mujeres, sin experiencia, gratis · unsplash-wYXFQ4XOTZY-atrapada-estadio
 - 2026-10-30 10:00 · 008-story-viernes · story · hoy entrenamos 17 hs · pexels-20836271-corriendo
 - 2026-10-31 10:00 · 009-story-sabado · story · hoy hay práctica 16 hs · pexels-20836272-accion-cancha
+- 2026-11-03 19:00 · 010-que-es-la-marca · imagen · enseñar: la marca (conteo hasta diez, sin contacto, una sola persona marcando) · banco-cc/commons-yourdon-19 (atribución en caption)
+- 2026-11-05 19:00 · 011-mujeres-al-ultimate · imagen · invitar: mixto, mujeres explícito, sin experiencia, gratis, horarios · banco-cc/commons-yourdon-17 (atribución en caption)
+- 2026-11-06 10:00 · 012-story-viernes · story · hoy entrenamos 17 hs · pexels-17119328-salto-estadio
+- 2026-11-07 10:00 · 013-story-sabado · story · hoy hay práctica 16 hs · banco-cc/commons-salto-vertical (atribución en la imagen; descarté pexels-20836274-defensa por nombre legible en camiseta y pexels-35090813-grupo-corriendo porque en el recorte story casi no se ve el disco)

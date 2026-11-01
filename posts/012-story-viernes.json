@@ -1,0 +1,11 @@
+{
+  "id": "012-story-viernes",
+  "fecha_utc": "2026-11-06T13:00:00Z",
+  "tipo": "story",
+  "caption": "",
+  "medios": [
+    "piezas/012-story-viernes.jpg"
+  ],
+  "estado": "pendiente",
+  "media_id_publicado": null
+}
