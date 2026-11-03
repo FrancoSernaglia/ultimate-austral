@@ -53,6 +53,102 @@ Usos: `reel`, `story`, `feed`, `carrusel`. Tramos en segundos (`desde-hasta`) de
 - **Puntaje:** no se califica (no es material de cancha).
 - **Usos:** ninguno nuevo; las piezas se arman con `armar_imagen.py`.
 
+### WhatsApp Video 2026-11-03 at 20.41.31.mp4
+- **Tipo:** video horizontal 1024x576, 6.2 s, con audio. Importado el 03/11/2026.
+- **Permiso:** no confirmado (está en la raíz de OneDrive).
+- **Puntaje:** 4/5 (técnica 3, contenido 4).
+- **Qué muestra:** primer plano de un lanzamiento: alguien arma el brazo con el disco sobre la cabeza, un compañero lo acompaña con el brazo extendido y el disco sale hacia el fondo de la cancha. Todos varones.
+- **Tramos buenos:** `0-6` entero (gesto claro, buena luz, conos a la vista).
+- **Evitar:** nada puntual.
+- **Usos:** reel "así se tira un pase" (corto, funciona sin sonido), story.
+- **Listas:** ninguna (falta permiso).
+- **Usado:** nunca.
+
+### WhatsApp Video 2026-11-03 at 20.41.31 (1).mp4
+- **Tipo:** video horizontal 1024x576, 28.4 s, con audio. Importado el 03/11/2026.
+- **Permiso:** no confirmado.
+- **Puntaje:** 3/5 (técnica 3, contenido 3).
+- **Qué muestra:** ejercicio con conos: varios jugando a la vez, pases cortos y largos, gente corriendo y agachándose a levantar el disco. Todos varones. Se reconoce el lugar (arboleda y edificios al fondo).
+- **Tramos buenos:** `3-9` (pase corto entre dos, bien encuadrado); `20-28` (varias personas cerca de los conos).
+- **Evitar:** `10-19` (jugadores muy chicos en cuadro).
+- **Usos:** story, reel de ambiente ("así se ve un viernes").
+- **Listas:** ninguna (falta permiso).
+- **Usado:** nunca.
+
+### WhatsApp Video 2026-11-03 at 20.41.31 (2).mp4
+- **Tipo:** video vertical 576x1024, 3.6 s, con audio. Importado el 03/11/2026.
+- **Permiso:** no confirmado.
+- **Puntaje:** 1/5 (técnica 2, contenido 1).
+- **Qué muestra:** dos personas lejísimas pasando el disco, casi no se distingue.
+- **Evitar:** todo.
+- **Usos:** ninguno.
+- **Listas:** ninguna.
+- **Usado:** nunca.
+
+### WhatsApp Video 2026-11-03 at 20.41.30.mp4
+- **Tipo:** video vertical 576x1024, 9.2 s, con audio. Importado el 03/11/2026.
+- **Permiso:** no confirmado.
+- **Puntaje:** 3/5 (técnica 3, contenido 3).
+- **Qué muestra:** pases entre dos grupos lejos, con un cono en primer plano. El disco se ve en el aire a los 1-2 s y apoyado en el pasto a los 6-9 s.
+- **Tramos buenos:** `0-3` (disco en el aire sobre la arboleda, dos jugadores).
+- **Evitar:** `4-9` (cámara quieta sin acción).
+- **Usos:** story.
+- **Listas:** ninguna (falta permiso).
+- **Usado:** nunca.
+
+### WhatsApp Video 2026-11-03 at 20.41.30 (1).mp4
+- **Tipo:** video vertical 576x1024, 27.1 s, con audio. Importado el 03/11/2026.
+- **Permiso:** no confirmado.
+- **Puntaje:** 3/5 (técnica 3, contenido 3).
+- **Qué muestra:** ejercicio individual con un cono caído en primer plano: un jugador se prepara y tira, otro se acerca y conversan, y al final se ve a alguien recibiendo el disco de cerca. Todos varones.
+- **Tramos buenos:** `16-22` (se acerca otro jugador y hay interacción); `23-27` (recepción de cerca).
+- **Evitar:** `8-15` (parado sin acción).
+- **Usos:** story.
+- **Listas:** ninguna (falta permiso).
+- **Usado:** nunca.
+
+### WhatsApp Video 2026-11-03 at 20.41.30 (2).mp4
+- **Tipo:** video vertical 576x1024, 19.0 s, con audio. Importado el 03/11/2026.
+- **Permiso:** no confirmado.
+- **Puntaje:** 2/5 (técnica 2, contenido 2).
+- **Qué muestra:** pases lejanos con contraluz fuerte y reflejos del sol, cámara movida, termina en puro pasto.
+- **Tramos buenos:** `10-13` (grupo reunido junto a un cono).
+- **Evitar:** `14-19` (movido y pasto).
+- **Usos:** ninguno, o story corta de ambiente.
+- **Listas:** ninguna.
+- **Usado:** nunca.
+
+### WhatsApp Video 2026-11-03 at 20.41.29.mp4
+- **Tipo:** video horizontal 832x464, 30.6 s, con audio. Importado el 03/11/2026.
+- **Permiso:** no confirmado.
+- **Puntaje:** 3/5 (técnica 3, contenido 3).
+- **Qué muestra:** ejercicio de lanzamientos entre conos con cámara en mano: se ven varios lanzamientos de lejos y un jugador que se agacha a recoger el disco. Todos varones.
+- **Tramos buenos:** `16-18` (lanzamiento con el disco en la mano); `24-26` (agachada a buscar el disco, el momento más dinámico).
+- **Evitar:** `10-15` (paneo movido, se ve la espalda de alguien en primer plano).
+- **Usos:** story.
+- **Listas:** ninguna (falta permiso).
+- **Usado:** nunca.
+
+### WhatsApp Video 2026-11-03 at 20.41.29 (1).mp4
+- **Tipo:** video vertical 576x1024, 51.7 s, con audio. Importado el 03/11/2026.
+- **Permiso:** no confirmado.
+- **Puntaje:** 3/5 (técnica 3, contenido 3).
+- **Qué muestra:** ejercicio de pases entre conos, a veces con alguien en primer plano. Se ve un disco celeste apoyado en el pasto y una atrapada con el brazo en alto a los 45 s.
+- **Tramos buenos:** `40-47` (atrapada con brazo en alto).
+- **Evitar:** `15-22` (cámara al pasto, movido); `47-51` (nada de acción).
+- **Usos:** reel "tu primer pase" (cortado), story.
+- **Listas:** ninguna (falta permiso).
+- **Usado:** nunca.
+
+### WhatsApp Image 2026-11-03 at 20.41.31.jpeg
+- **Tipo:** foto vertical 960x1280. Importada el 03/11/2026.
+- **Permiso:** no confirmado.
+- **Puntaje:** 3/5 (técnica 3, contenido 2).
+- **Qué muestra:** cancha abierta con pasto y arboleda, cielo con sol fuerte y algunas personas chicas lejos en el campo. Todos varones.
+- **Usos:** fondo para una pieza gráfica ("esto es la cancha"), story.
+- **Listas:** ninguna (falta permiso).
+- **Usado:** nunca.
+
 ## Lo que falta
 
 - Mujeres jugando (para un equipo mixto es lo más importante).
