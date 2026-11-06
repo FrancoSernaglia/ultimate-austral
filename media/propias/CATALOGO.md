@@ -3,7 +3,7 @@
 Fotos y videos del equipo. Los sube Franco a OneDrive (`Austral Ultimate/`); cada domingo a las 8:00 una tarea local (`contexto/instagram/importar-propias.md`) los copia a `media/propias/crudos/`, los califica acá y prepara versiones limpias en `media/propias/listas/`. La rutina local de las 14:00 arma las piezas a partir de `listas/`.
 
 - **Crudos y previews no van a git** (repo público, caras sin editar, archivos pesados). Viven solo en la PC de Franco y en OneDrive.
-- **Permiso:** solo lo que está en `Austral Ultimate/con-permiso/` se publica. El resto se cataloga y espera.
+- **Permiso:** desde el 06/11/2026 Franco autorizó en general todo el material propio del equipo, caras incluidas (la idea es mostrar comunidad). Todo lo que Franco sube a OneDrive entra con `Permiso: sí (autorización general de Franco, 06/11/2026)`. Siguen afuera los primeros planos de gente que no es del equipo, menores de edad, y lo que muestre algo privado (ver "Evitar" de cada ficha).
 - **Nunca** se nombra ni se etiqueta a nadie, ni se describe a una persona puntual ("el de remera azul").
 
 ## Cómo se califica
@@ -40,11 +40,11 @@ Usos: `reel`, `story`, `feed`, `carrusel`. Tramos en segundos (`desde-hasta`) de
 
 ### 20261024_183914.jpg
 - **Tipo:** foto vertical 3000x4000 (con EXIF girado). Importada el 25/10/2026.
-- **Permiso:** no confirmado.
+- **Permiso:** sí (autorización general de Franco, 06/11/2026).
 - **Puntaje:** 4/5 (técnica 4, contenido 4).
 - **Qué muestra:** foto grupal de 6 personas sonriendo con 3 discos, agachadas en el pasto, día nublado. Todos varones.
 - **Usos:** post de feed "quiénes somos" o para fijar en el perfil. El caption tiene que invitar a mujeres en forma explícita, porque en la foto son todos varones.
-- **Listas:** ninguna (falta permiso).
+- **Listas:** grupo-con-discos.jpg.
 - **Usado:** nunca.
 
 ### austral-ultimate-flyer.jpg

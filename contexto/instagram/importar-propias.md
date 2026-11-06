@@ -21,7 +21,7 @@ Escribí la ficha en `media/propias/CATALOGO.md` con el mismo formato que las ex
 - Marcá en "Evitar" los primeros planos de caras de gente que no está jugando, los tramos movidos y todo lo que muestre algo privado (patentes, pantallas, mochilas abiertas).
 - Si un archivo es repetido, borroso o no sirve, igual lleva ficha: puntaje 1 y "Usos: ninguno".
 
-En los actualizados (ahora con permiso) cambiá `Permiso` a `sí`.
+Permiso: desde el 06/11/2026 Franco autorizó en general todo el material propio del equipo, con caras (quiere transmitir comunidad). Todo archivo nuevo lleva `Permiso: sí (autorización general de Franco, 06/11/2026)`, esté en la raíz de OneDrive o en `con-permiso/`, y no hace falta que lo mueva. Excepciones (van a "Evitar" y no se publican): primeros planos de gente que claramente no es del equipo, menores de edad y cualquier dato privado.
 
 ## 3. Preparar (solo `Permiso: sí` y puntaje 3 o más, con Listas vacío)
 
