@@ -1,0 +1,21 @@
+{
+  "titulo": "Corte en V: amagá profundo, volvé al disco",
+  "cancha": {"ancho": 20, "largo": 26},
+  "conos": [[6, 4], [6, 22]],
+  "jugadores": {
+    "L": {"equipo": "ataque", "pos": [6, 5], "label": "L"},
+    "C1": {"equipo": "ataque", "pos": [6, 21], "label": "1"},
+    "C2": {"equipo": "ataque", "pos": [6, 23], "label": "2"},
+    "C3": {"equipo": "ataque", "pos": [6, 25], "label": "3"}
+  },
+  "disco": {"en": "L"},
+  "intro": "L lanza, la fila espera en el cono de arriba",
+  "pasos": [
+    {"dur": 1.4, "texto": "1 arranca hacia la zona profunda (2 o 3 pasos fuertes)", "mover": {"C1": [9, 24]}},
+    {"dur": 1.8, "texto": "Frena, planta el pie y vuelve en diagonal hacia el disco", "mover": {"C1": [14, 13]}, "pase": {"a": "C1", "inicio": 0.55, "curva": 1.2}},
+    {"dur": 1.6, "texto": "1 atrapa con dos manos y pasa al cono de L. L va al final de la fila", "mover": {"C1": [14, 13], "L": [6, 26]}, "rastro": false},
+    {"dur": 1.2, "texto": "El que corta queda de lanzador. Sigue 2", "mover": {"C1": [6, 5], "C2": [6, 21], "C3": [6, 23]}, "rastro": false}
+  ],
+  "cierre": "Rotá: lanzador, corte, fila. Cambiá de lado cada 5 min",
+  "resumen": "Corte en V: profundo, frená, volvé en diagonal y atrapá con dos manos"
+}

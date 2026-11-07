@@ -1,0 +1,26 @@
+{
+  "titulo": "Ataque 3v3: uno corto, uno largo",
+  "cancha": {"ancho": 20, "largo": 35},
+  "conos": [[0, 5], [20, 5], [0, 30], [20, 30]],
+  "lineas": [[[0, 5], [20, 5]], [[0, 30], [20, 30]]],
+  "zonas": [{"desde": 0, "hasta": 5}, {"desde": 30, "hasta": 35}],
+  "jugadores": {
+    "L": {"equipo": "ataque", "pos": [10, 6], "label": "L"},
+    "C": {"equipo": "ataque", "pos": [10, 15], "label": "C"},
+    "P": {"equipo": "ataque", "pos": [10, 25], "label": "P"},
+    "dL": {"equipo": "defensa", "pos": [10, 7.5], "label": "D"},
+    "dC": {"equipo": "defensa", "pos": [10, 13.5], "label": "D"},
+    "dP": {"equipo": "defensa", "pos": [10, 23.5], "label": "D"}
+  },
+  "disco": {"en": "L"},
+  "intro": "L con el disco, C (corto) a 10 m y P (largo) a 20 m",
+  "pasos": [
+    {"dur": 1.6, "texto": "P amaga y corta hacia un costado", "mover": {"P": [16, 21], "dP": [15, 20]}},
+    {"dur": 1.4, "texto": "No le llega: sigue y despeja hacia el fondo", "mover": {"P": [17, 29], "dP": [16, 27.5]}},
+    {"dur": 1.8, "texto": "C corta en V hacia el disco por el otro lado y recibe", "mover": {"C": [5, 11], "dC": [6.5, 12.5]}, "pase": {"a": "C", "inicio": 0.55, "curva": 1}},
+    {"dur": 1.6, "texto": "L se ofrece atrás y P vuelve a cortar al espacio", "mover": {"L": [9, 9], "dL": [9.5, 10.5], "P": [12, 22], "dP": [13, 23.5]}},
+    {"dur": 1.8, "texto": "Gol: pase a P adentro de la zona", "mover": {"P": [14, 32], "dP": [13, 30.5]}, "pase": {"a": "P", "inicio": 0.25, "curva": -1.2}}
+  ],
+  "cierre": "Nunca los dos hacia el mismo lado. Si no te llega, despejá",
+  "resumen": "Corto y largo a lados distintos; el que no recibe despeja y vuelve a cortar"
+}

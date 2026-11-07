@@ -1,0 +1,22 @@
+{
+  "titulo": "Lanzar al espacio: el disco va adonde va a estar",
+  "cancha": {"ancho": 20, "largo": 20},
+  "conos": [[4, 4], [16, 4]],
+  "jugadores": {
+    "L1": {"equipo": "ataque", "pos": [4, 5], "label": "L"},
+    "L2": {"equipo": "ataque", "pos": [3, 3.5], "label": "L"},
+    "L3": {"equipo": "ataque", "pos": [2, 2], "label": "L"},
+    "C1": {"equipo": "ataque", "pos": [16, 5], "label": "C"},
+    "C2": {"equipo": "ataque", "pos": [17, 3.5], "label": "C"},
+    "C3": {"equipo": "ataque", "pos": [18, 2], "label": "C"}
+  },
+  "disco": {"en": "L1"},
+  "intro": "Fila de lanzadores con los discos, fila de corredores enfrente",
+  "pasos": [
+    {"dur": 1.2, "texto": "El corredor sale en diagonal hacia adelante", "mover": {"C1": [12, 11]}},
+    {"dur": 1.8, "texto": "El lanzador suelta YA, 2-3 m por delante del corredor", "mover": {"C1": [7, 16]}, "pase": {"a": "C1", "inicio": 0.1, "curva": 0.8}},
+    {"dur": 1.6, "texto": "Atrapa en carrera y vuelve a la fila de lanzadores", "mover": {"C1": [5, 7], "L1": [16, 5]}, "rastro": false}
+  ],
+  "cierre": "5 min backhand, 5 min forehand (salen al otro lado)",
+  "resumen": "Soltá antes: apuntá 2-3 m delante del corredor"
+}

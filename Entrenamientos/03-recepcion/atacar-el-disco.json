@@ -1,0 +1,19 @@
+{
+  "titulo": "Atacá el disco: no lo esperes",
+  "cancha": {"ancho": 12, "largo": 16},
+  "conos": [[6, 2]],
+  "jugadores": {
+    "L": {"equipo": "ataque", "pos": [6, 3], "label": "L"},
+    "R": {"equipo": "ataque", "pos": [6, 12], "label": "R"},
+    "D": {"equipo": "defensa", "pos": [6.4, 14], "label": "D"}
+  },
+  "disco": {"en": "L"},
+  "intro": "R a 10 m del lanzador, D dos pasos detrás",
+  "pasos": [
+    {"dur": 1.0, "texto": "L tira un pase flotado hacia R", "pase": {"a": "R", "inicio": 0.95}},
+    {"dur": 1.6, "texto": "R da dos pasos fuertes hacia el disco y atrapa adelante", "mover": {"R": [6, 9], "D": [6.3, 10.5]}},
+    {"dur": 1.4, "texto": "D juega el disco, nunca el cuerpo. 5 intentos y rotan", "mover": {"R": [6, 3], "L": [6, 12], "D": [6.4, 14]}, "rastro": false}
+  ],
+  "cierre": "El que espera el disco lo pierde",
+  "resumen": "Dos pasos fuertes hacia el disco y atrapada adelante, lejos del defensor"
+}

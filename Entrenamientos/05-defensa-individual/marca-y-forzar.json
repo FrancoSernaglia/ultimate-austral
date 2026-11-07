@@ -1,0 +1,20 @@
+{
+  "titulo": "La marca: tapá un lado y contá en voz alta",
+  "cancha": {"ancho": 16, "largo": 14},
+  "conos": [[3, 11], [13, 11]],
+  "jugadores": {
+    "L": {"equipo": "ataque", "pos": [8, 3], "label": "L"},
+    "M": {"equipo": "defensa", "pos": [8, 4.6], "label": "M"},
+    "R": {"equipo": "ataque", "pos": [3, 11], "label": "R"}
+  },
+  "disco": {"en": "L"},
+  "intro": "Forzamos forehand: M tapa el lado del backhand",
+  "pasos": [
+    {"dur": 1.2, "texto": "M se corre hacia el lado tapado: stall uno, stall dos...", "mover": {"M": [7, 4.4]}},
+    {"dur": 1.0, "texto": "L pivotea al lado tapado. M acompaña con los pies", "mover": {"L": [6.2, 3.3], "M": [5.8, 4.5]}},
+    {"dur": 1.2, "texto": "L vuelve al lado abierto. M no salta al amague", "mover": {"L": [9.6, 3.3], "M": [7.4, 4.5], "R": [13, 11]}},
+    {"dur": 1.6, "texto": "El único pase posible sale por el lado forzado", "pase": {"a": "R", "inicio": 0.2, "curva": -0.8}}
+  ],
+  "cierre": "Si llegás a stall 10 antes del pase, es turnover",
+  "resumen": "Marca a un brazo, corrida hacia el lado tapado, pies que acompañan y cuenta en voz alta"
+}

@@ -1,0 +1,19 @@
+{
+  "titulo": "Pivote: amagá al lado tapado, pasá por el abierto",
+  "cancha": {"ancho": 14, "largo": 14},
+  "jugadores": {
+    "L": {"equipo": "ataque", "pos": [7, 3], "label": "L"},
+    "M": {"equipo": "defensa", "pos": [7, 4.6], "label": "M"},
+    "R": {"equipo": "ataque", "pos": [7, 11.5], "label": "R"}
+  },
+  "disco": {"en": "L"},
+  "intro": "M marca a un brazo y cuenta en voz alta: stall 1, 2, 3...",
+  "pasos": [
+    {"dur": 1.2, "texto": "M tapa el lado del backhand (fuerza forehand)", "mover": {"M": [6.2, 4.4]}},
+    {"dur": 1.0, "texto": "L amaga al lado tapado, sin mover el pie de pivote", "mover": {"L": [6.3, 3.3]}},
+    {"dur": 1.8, "texto": "Paso largo y bajo al lado abierto y suelta el forehand", "mover": {"L": [8.6, 3.4], "R": [8.5, 11.5]}, "pase": {"a": "R", "inicio": 0.5, "curva": -0.6}},
+    {"dur": 1.4, "texto": "Cada 5 pases rotan: L a marca, M a receptor, R a lanzador", "mover": {"L": [7, 4.6], "M": [7, 11.5], "R": [7, 3]}, "rastro": false}
+  ],
+  "cierre": "El pie de pivote no se mueve. Si se mueve, es travel",
+  "resumen": "Amague al lado tapado, paso largo y bajo, pase por el lado abierto"
+}
