@@ -36,6 +36,12 @@ Corre los miércoles a las 20:00 como tarea programada local en la PC de Franco 
 1. Sumá la fila de la semana a `historial.md`.
 2. `git add Entrenamientos herramientas/animar_ejercicio.py`, commit con mensaje "Entrenamientos semana <n>: <foco>" y `git push` a `main`. Si el push falla, seguí igual con el mail (avisá en el mail que los links de videos nuevos todavía no andan).
 
+## 4b. Visor (artifact)
+
+1. `"$LOCALAPPDATA/Microsoft/WindowsApps/python3.11.exe" -X utf8 herramientas/armar_visor.py --files` (regenera `Entrenamientos/visor/index.html` e imprime el mapa de archivos de media).
+2. Si tenés la herramienta Artifact, republicá en el mismo link: `action: publish`, `url: https://claude.ai/artifact/1KWDTsVFGaYt1WH3Zt4BZf`, `file_path` al `index.html` y `files` con el mapa que imprimió el script (si la herramienta pide leer el artifact antes, leelo y publicá igual). Si no está disponible, seguí: el HTML queda commiteado y Franco lo republica desde una sesión.
+3. Commiteá `Entrenamientos/visor/index.html` junto con el resto.
+
 ## 5. Mail
 
 Mandalo con el conector de Gmail (`send_message`) a **fsernaglia01@gmail.com**, en `htmlBody` (y el mismo contenido en texto plano en `body`).
@@ -45,6 +51,7 @@ Mandalo con el conector de Gmail (`send_message`) a **fsernaglia01@gmail.com**, 
 - Una tabla por día (minutos, qué, cómo en una línea). Debajo de cada tabla, "lo que mirás hoy".
 - Sección "Videos para el grupo": por cada video, link al MP4 y al diagrama PNG:
   `https://raw.githubusercontent.com/FrancoSernaglia/ultimate-austral/main/Entrenamientos/<carpeta>/<ejercicio>.mp4` (y `.png`).
+- Link al visor con todos los ejercicios y videos: https://claude.ai/artifact/1KWDTsVFGaYt1WH3Zt4BZf
 - Al final: link al plan completo en GitHub (`https://github.com/FrancoSernaglia/ultimate-austral/blob/main/Entrenamientos/semanas/AAAA-MM-DD.md`) y el recordatorio "Después de la práctica anotá 3 líneas en Entrenamientos/feedback.md".
 - Estilo del repo: voseo, directo, sin rayas largas, sin "no es X, es Y".
 - No adjuntes archivos (los videos van por link).

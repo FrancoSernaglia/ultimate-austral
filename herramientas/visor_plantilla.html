@@ -1,0 +1,275 @@
+<title>Entrenamientos Austral Ultimate</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: barra de cancha arriba (marca + pestañas), contenido en una columna de 1100px; fichas en grilla con miniatura del diagrama. */
+:root {
+  --bg: #f2f5f0;
+  --surface: #ffffff;
+  --ink: #102a20;
+  --muted: #56695f;
+  --line: #d4ded6;
+  --field: #0b3d2e;
+  --field-ink: #f4f8f3;
+  --accent: #ffd60a;
+  --accent-ink: #0b3d2e;
+  --chip: #e4ece5;
+  --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "Barlow", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #07211a; --surface: #0d3025; --ink: #e8f1eb; --muted: #9ab3a6; --line: #1f4a3b;
+    --field: #0b3d2e; --field-ink: #f4f8f3; --accent: #ffd60a; --accent-ink: #0b3d2e; --chip: #143d30;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #07211a; --surface: #0d3025; --ink: #e8f1eb; --muted: #9ab3a6; --line: #1f4a3b;
+  --field: #0b3d2e; --field-ink: #f4f8f3; --accent: #ffd60a; --accent-ink: #0b3d2e; --chip: #143d30;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 16px/1.55 var(--body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--field); }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+.barra { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--field); color: var(--field-ink);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.barra-in { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: end; gap: 6px 28px; padding-block: 14px 0; }
+.marca { display: grid; gap: 0; padding-bottom: 12px; }
+.marca small { font: 700 13px/1 var(--display); letter-spacing: .14em; color: var(--accent); }
+.marca b { font: 700 30px/1.05 var(--display); letter-spacing: .01em; text-transform: uppercase; }
+nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; margin-left: auto; }
+nav a { text-decoration: none; font: 600 17px/1 var(--display); letter-spacing: .06em; text-transform: uppercase;
+  padding: 12px 14px 13px; border-bottom: 4px solid transparent; color: color-mix(in srgb, var(--field-ink) 75%, transparent); white-space: nowrap; }
+nav a[aria-current="page"] { color: var(--field-ink); border-bottom-color: var(--accent); }
+
+main { max-width: 1100px; margin: 0 auto; padding-block: 28px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--display); text-wrap: balance; line-height: 1.1; margin: 0; }
+h1 { font-size: clamp(30px, 5vw, 44px); text-transform: uppercase; letter-spacing: .01em; }
+.lead { color: var(--muted); max-width: 62ch; margin: 8px 0 0; font-size: 17px; }
+.cabeza { display: grid; gap: 4px; margin-bottom: 22px; }
+.eyebrow { font: 700 13px/1 var(--display); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+/* habilidades */
+.chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.chip { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 7px 14px 7px 8px;
+  font: 600 15px/1 var(--body); cursor: pointer; display: inline-flex; gap: 8px; align-items: center; }
+.chip .n { font: 700 12px/1 var(--display); background: var(--chip); color: var(--muted); border-radius: 999px; padding: 5px 7px; font-variant-numeric: tabular-nums; }
+.chip[aria-pressed="true"] { background: var(--field); color: var(--field-ink); border-color: var(--field); }
+.chip[aria-pressed="true"] .n { background: var(--accent); color: var(--accent-ink); }
+.herram { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-bottom: 18px; color: var(--muted); font-size: 15px; }
+.herram label { display: inline-flex; gap: 8px; align-items: center; cursor: pointer; }
+.herram input { accent-color: var(--field); width: 18px; height: 18px; }
+.desc-hab { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 22px; max-width: 760px; }
+.desc-hab h2 { font-size: 24px; text-transform: uppercase; margin-bottom: 6px; }
+.desc-hab p, .desc-hab li { color: var(--ink); }
+
+.grilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 18px; }
+.ficha { display: grid; grid-template-rows: auto 1fr; background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  overflow: hidden; text-decoration: none; transition: transform .15s ease, border-color .15s ease; }
+.ficha:hover { transform: translateY(-2px); border-color: var(--muted); }
+.mini { position: relative; aspect-ratio: 4 / 3; background: var(--field); overflow: hidden; max-width: 100%; }
+.mini img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 52%; display: block; }
+.mini .vacia { position: absolute; inset: 14px; border: 2px solid color-mix(in srgb, var(--field-ink) 55%, transparent); display: grid; place-items: center;
+  background: repeating-linear-gradient(0deg, transparent 0 22%, color-mix(in srgb, var(--field-ink) 5%, transparent) 22% 44%); }
+.mini .vacia span { font: 700 46px/1 var(--display); color: color-mix(in srgb, var(--field-ink) 30%, transparent); }
+.tag-video { position: absolute; top: 10px; left: 10px; background: var(--accent); color: var(--accent-ink); font: 700 13px/1 var(--display);
+  letter-spacing: .08em; text-transform: uppercase; padding: 6px 8px; border-radius: 4px; }
+.ficha-txt { padding: 14px 16px 16px; display: grid; gap: 8px; align-content: start; }
+.ficha-txt h3 { font-size: 22px; }
+.ficha-txt p { margin: 0; color: var(--muted); font-size: 15px; }
+.datos { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.dato { font-size: 13px; background: var(--chip); color: var(--ink); border-radius: 4px; padding: 3px 7px; font-variant-numeric: tabular-nums; }
+.nivel { font-weight: 600; }
+.nivel-inicial { box-shadow: inset 3px 0 0 #3fae6b; }
+.nivel-intermedio { box-shadow: inset 3px 0 0 #e8a33a; }
+.nivel-avanzado { box-shadow: inset 3px 0 0 #d9534f; }
+.vacio { color: var(--muted); padding: 28px 0; }
+
+/* detalle */
+.volver { display: inline-block; margin-bottom: 14px; color: var(--muted); text-decoration: none; font-weight: 600; }
+.detalle { display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 32px; align-items: start; }
+.medio { display: grid; gap: 10px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 90px); }
+.medio video, .medio img { width: 100%; max-width: 100%; aspect-ratio: 4 / 5; border-radius: 10px; background: var(--field); display: block; object-fit: contain; }
+.medio .alt { display: flex; gap: 8px; }
+.medio button { flex: 1; font: 600 15px/1 var(--body); padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.medio button[aria-pressed="true"] { background: var(--field); color: var(--field-ink); border-color: var(--field); }
+.sin-medio { aspect-ratio: 4 / 5; border-radius: 10px; background: var(--field); color: var(--field-ink); display: grid; place-items: center; text-align: center; padding: 24px; }
+.sin-medio p { margin: 0; opacity: .8; max-width: 26ch; }
+.spec { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin: 18px 0 8px; }
+.spec div { background: var(--surface); padding: 10px 12px; display: grid; gap: 2px; min-width: 0; }
+.spec dt { font: 700 12px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.spec dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+.prosa { max-width: 68ch; }
+.prosa h2, .prosa h3 { font-size: 22px; text-transform: uppercase; letter-spacing: .02em; margin: 26px 0 8px; }
+.prosa h4 { font-size: 19px; margin: 18px 0 6px; }
+.prosa ul, .prosa ol { padding-left: 1.3em; margin: 6px 0; }
+.prosa li { margin: 4px 0; }
+.prosa p { margin: 8px 0; }
+.prosa code, .regla { font-size: .88em; background: var(--chip); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+.prosa a.ref { font-weight: 600; text-decoration-color: var(--accent); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+.prosa a.vid { white-space: nowrap; font-weight: 600; text-decoration: none; background: var(--accent); color: var(--accent-ink); border-radius: 4px; padding: 1px 6px; font-size: 14px; }
+.tabla { overflow-x: auto; margin: 10px 0 14px; border: 1px solid var(--line); border-radius: 10px; }
+.tabla table { border-collapse: collapse; width: 100%; font-size: 15px; background: var(--surface); }
+.tabla th { text-align: left; font: 700 13px/1.2 var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); background: var(--chip); }
+.tabla th, .tabla td { padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tabla tr:last-child td { border-bottom: 0; }
+.tabla td:first-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.prosa-ancha { max-width: none; }
+.sel-semana { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; color: var(--muted); }
+.sel-semana select { font: 500 15px var(--body); padding: 7px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); max-width: 100%; }
+
+@media (max-width: 760px) {
+  .detalle { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .medio { position: static; }
+  nav { margin-left: 0; width: 100%; }
+  .marca { padding-bottom: 4px; }
+}
+@media (prefers-reduced-motion: reduce) { .ficha { transition: none; } .ficha:hover { transform: none; } }
+</style>
+
+<header class="barra">
+  <div class="barra-in">
+    <div class="marca"><small>ULTIMATE AUSTRAL</small><b>Entrenamientos</b></div>
+    <nav aria-label="Secciones">
+      <a href="#semana" data-v="semana">Esta semana</a>
+      <a href="#habilidades" data-v="habilidades">Habilidades</a>
+      <a href="#programa" data-v="programa">Programa</a>
+      <a href="#equipo" data-v="equipo">Equipo</a>
+    </nav>
+  </div>
+</header>
+<main id="app"></main>
+
+<script>
+const D = /*__DATOS__*/null;
+const app = document.getElementById("app");
+const habPorId = Object.fromEntries(D.habilidades.map(h => [h.id, h]));
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let soloVideo = false;
+try { soloVideo = localStorage.getItem("soloVideo") === "1"; } catch (e) {}
+
+function marcarNav(v) {
+  document.querySelectorAll("nav a").forEach(a => {
+    if (a.dataset.v === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+  });
+}
+function nivelClase(n) { return "nivel-" + (n.split("-")[0] || "inicial"); }
+
+function tarjeta(e) {
+  const hab = habPorId[e.habilidad];
+  const mini = e.png
+    ? `<img src="${e.png}" alt="Diagrama de ${esc(e.nombre)}" loading="lazy">`
+    : `<div class="vacia"><span>${hab ? hab.num : ""}</span></div>`;
+  return `<a class="ficha" href="#ej-${e.id}">
+    <div class="mini">${mini}${e.mp4 ? '<span class="tag-video">▶ Video</span>' : ""}</div>
+    <div class="ficha-txt">
+      <span class="eyebrow">${esc(hab ? hab.nombre : e.habilidad)}</span>
+      <h3>${esc(e.nombre)}</h3>
+      ${e.para_que ? `<p>${esc(e.para_que)}</p>` : ""}
+      <div class="datos">
+        <span class="dato nivel ${nivelClase(e.nivel)}">${esc(e.nivel)}</span>
+        ${e.duracion ? `<span class="dato">${esc(e.duracion)}</span>` : ""}
+        ${e.discos && e.discos !== "0" ? `<span class="dato">${esc(e.discos.split(" ")[0])} discos</span>` : ""}
+      </div>
+    </div></a>`;
+}
+
+function vistaHabilidades(sel) {
+  marcarNav("habilidades");
+  const cuenta = id => D.ejercicios.filter(e => e.habilidad === id).length;
+  const lista = D.ejercicios.filter(e => (!sel || e.habilidad === sel) && (!soloVideo || e.mp4));
+  const h = sel ? habPorId[sel] : null;
+  const conVideo = D.ejercicios.filter(e => e.mp4).length;
+  app.innerHTML = `
+    <div class="cabeza"><span class="eyebrow">Biblioteca</span><h1>Habilidades</h1>
+      <p class="lead">${D.ejercicios.length} ejercicios en ${D.habilidades.length} habilidades, ${conVideo} con video animado. Tocá uno para ver el diagrama, el video y cómo se arma.</p></div>
+    <div class="chips" role="group" aria-label="Filtrar por habilidad">
+      <button class="chip" aria-pressed="${!sel}" data-h=""><span class="n">${D.ejercicios.length}</span>Todas</button>
+      ${D.habilidades.map(x => `<button class="chip" aria-pressed="${sel === x.id}" data-h="${x.id}"><span class="n">${x.num}</span>${esc(x.nombre)}</button>`).join("")}
+    </div>
+    <div class="herram"><label><input type="checkbox" id="solo-video" ${soloVideo ? "checked" : ""}> Solo los que tienen video</label><span>${lista.length} ${lista.length === 1 ? "ejercicio" : "ejercicios"}</span></div>
+    ${h ? `<section class="desc-hab prosa"><h2>${esc(h.nombre)}</h2>${h.html}</section>` : ""}
+    <div class="grilla">${lista.map(tarjeta).join("") || ""}</div>
+    ${lista.length ? "" : `<p class="vacio">${h && !cuenta(h.id) ? "Esta habilidad se trabaja con charlas cortas, no con ejercicios de cancha (arriba están todas)." : "No hay ejercicios con video en esta habilidad todavía. Destildá el filtro para ver todos."}</p>`}`;
+  app.querySelectorAll(".chip").forEach(b => b.onclick = () => { location.hash = b.dataset.h ? "hab-" + b.dataset.h : "habilidades"; });
+  app.querySelector("#solo-video").onchange = ev => {
+    soloVideo = ev.target.checked;
+    try { localStorage.setItem("soloVideo", soloVideo ? "1" : "0"); } catch (e) {}
+    vistaHabilidades(sel);
+  };
+}
+
+function vistaEjercicio(id) {
+  const e = D.ejercicios.find(x => x.id === id);
+  if (!e) return vistaHabilidades();
+  marcarNav("habilidades");
+  const hab = habPorId[e.habilidad];
+  let medio;
+  if (e.mp4) {
+    medio = `<video id="vid" src="${e.mp4}" poster="${e.png || ""}" controls muted loop playsinline preload="metadata"></video>
+      <img id="dia" src="${e.png}" alt="Diagrama de ${esc(e.nombre)}" hidden>
+      <div class="alt"><button id="b-vid" aria-pressed="true">Video</button><button id="b-dia" aria-pressed="false">Diagrama</button></div>`;
+  } else if (e.png) {
+    medio = `<img src="${e.png}" alt="Diagrama de ${esc(e.nombre)}">`;
+  } else {
+    medio = `<div class="sin-medio"><p>Este ejercicio todavía no tiene diagrama. La rutina de los miércoles lo anima cuando entra en un plan.</p></div>`;
+  }
+  const spec = [["Nivel", e.nivel], ["Jugadores", e.jugadores], ["Duración", e.duracion], ["Intensidad", e.intensidad], ["Discos", e.discos], ["Conos", e.conos], ["Fuente", e.fuente]]
+    .filter(([, v]) => v).map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join("");
+  app.innerHTML = `
+    <a class="volver" href="#hab-${e.habilidad}">← ${esc(hab ? hab.nombre : "Habilidades")}</a>
+    <div class="detalle">
+      <div class="medio">${medio}</div>
+      <article class="prosa">
+        <span class="eyebrow">${esc(hab ? hab.num + " · " + hab.nombre : "")}</span>
+        <h1>${esc(e.nombre)}</h1>
+        ${e.para_que ? `<p class="lead">${esc(e.para_que)}</p>` : ""}
+        <dl class="spec">${spec}</dl>
+        ${e.html}
+      </article>
+    </div>`;
+  if (e.mp4) {
+    const vid = app.querySelector("#vid"), dia = app.querySelector("#dia"), bv = app.querySelector("#b-vid"), bd = app.querySelector("#b-dia");
+    bv.onclick = () => { vid.hidden = false; dia.hidden = true; bv.setAttribute("aria-pressed", "true"); bd.setAttribute("aria-pressed", "false"); };
+    bd.onclick = () => { vid.pause(); vid.hidden = true; dia.hidden = false; bd.setAttribute("aria-pressed", "true"); bv.setAttribute("aria-pressed", "false"); };
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) vid.play().catch(() => {});
+  }
+  window.scrollTo(0, 0);
+}
+
+function vistaSemana(id) {
+  marcarNav("semana");
+  if (!D.semanas.length) { app.innerHTML = `<h1>Esta semana</h1><p class="vacio">Todavía no hay planes.</p>`; return; }
+  const s = D.semanas.find(x => x.id === id) || D.semanas[0];
+  app.innerHTML = `
+    <div class="cabeza"><span class="eyebrow">Plan de viernes y sábado</span><h1>${esc(s.titulo)}</h1></div>
+    ${D.semanas.length > 1 ? `<div class="sel-semana"><label for="semana-sel">Otra semana</label><select id="semana-sel">${D.semanas.map(x => `<option value="${x.id}" ${x.id === s.id ? "selected" : ""}>${esc(x.id)}: ${esc(x.titulo)}</option>`).join("")}</select></div>` : ""}
+    <section class="prosa prosa-ancha">${s.html}</section>`;
+  const sel = app.querySelector("#semana-sel");
+  if (sel) sel.onchange = () => vistaSemana(sel.value);
+}
+
+function vistaTexto(v, eyebrow, titulo, html) {
+  marcarNav(v);
+  app.innerHTML = `<div class="cabeza"><span class="eyebrow">${eyebrow}</span><h1>${titulo}</h1></div><section class="prosa prosa-ancha">${html}</section>`;
+}
+
+function ruta() {
+  const h = location.hash.slice(1);
+  if (h.startsWith("ej-")) return vistaEjercicio(h.slice(3));
+  if (h.startsWith("hab-")) return vistaHabilidades(h.slice(4));
+  if (h === "habilidades") return vistaHabilidades();
+  if (h === "programa") return vistaTexto("programa", "Ciclo de 8 semanas", "Programa", D.programa);
+  if (h === "equipo") return vistaTexto("equipo", "Gente, material y cancha", "Equipo", D.equipo);
+  return vistaSemana();
+}
+addEventListener("hashchange", ruta);
+ruta();
+</script>
