@@ -1,6 +1,6 @@
 # Austral Ultimate
 
-Proyecto de Franco: fundar y organizar un equipo mixto de ultimate frisbee en la Universidad Austral (Pilar). Este repo contiene el publicador de Instagram (`publisher.py`, `posts/`, `media/`).
+Proyecto de Franco: fundar y organizar un equipo mixto de ultimate frisbee en la Universidad Austral (Pilar). Este repo contiene el publicador de Instagram (`publisher.py`, `posts/`, `media/`) y `reglas/`: las reglas WFDF 2025-2028 explicadas en castellano por sección (con número de regla), más `reglas/contenido-redes.md` con ideas de posts. Para cualquier contenido que hable de reglas, partí de ahí.
 
 Antes de trabajar leé el contexto en `contexto/` (memoria y diagnóstico son locales, no se suben porque el repo es público; si no están, seguí con el resto):
 - `contexto/diagnostico-inicial.md`: situación al 26/09/2026, riesgos, norte y preguntas abiertas.
