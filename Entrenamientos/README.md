@@ -2,6 +2,8 @@
 
 Biblioteca de ejercicios de Austral Ultimate, ordenada por habilidad, y el sistema que cada miércoles arma el plan de viernes y sábado y se lo manda por mail a Franco.
 
+**Visor:** https://claude.ai/artifact/1KWDTsVFGaYt1WH3Zt4BZf (habilidades, fichas con diagrama y video, plan de la semana, programa). Se regenera con `herramientas/armar_visor.py` (plantilla en `herramientas/visor_plantilla.html`) y la rutina de los miércoles lo republica.
+
 ## Cómo está armado
 
 | Carpeta | Qué hay |
