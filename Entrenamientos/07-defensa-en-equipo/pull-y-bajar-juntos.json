@@ -1,0 +1,25 @@
+{
+  "titulo": "El pull: la defensa baja junta",
+  "cancha": {"ancho": 20, "largo": 35},
+  "conos": [[0, 5], [20, 5], [0, 30], [20, 30]],
+  "lineas": [[[0, 5], [20, 5]], [[0, 30], [20, 30]]],
+  "zonas": [{"desde": 0, "hasta": 5}, {"desde": 30, "hasta": 35}],
+  "flecha_ataque": false,
+  "jugadores": {
+    "D1": {"equipo": "defensa", "pos": [10, 30.5], "label": "D"},
+    "D2": {"equipo": "defensa", "pos": [5, 30.5], "label": "D"},
+    "D3": {"equipo": "defensa", "pos": [15, 30.5], "label": "D"},
+    "A1": {"equipo": "ataque", "pos": [10, 4.5], "label": "A"},
+    "A2": {"equipo": "ataque", "pos": [5, 4.5], "label": "A"},
+    "A3": {"equipo": "ataque", "pos": [15, 4.5], "label": "A"}
+  },
+  "disco": {"en": "D1"},
+  "intro": "Defensa en su línea con el disco; ataque enfrente",
+  "pasos": [
+    {"dur": 2.4, "texto": "Pull alto y adentro. La defensa sale cuando el disco sale", "mover": {"D2": [5, 18], "D3": [15, 18], "D1": [10, 24], "A1": [10, 9]}, "pase": {"a": "A1", "inicio": 0.05, "curva": 1.5}},
+    {"dur": 1.8, "texto": "Bajan en línea y cada uno grita a quién toma", "mover": {"D2": [5.5, 12], "D3": [14.5, 12], "D1": [10, 15], "A2": [6, 14], "A3": [14, 14]}},
+    {"dur": 1.4, "texto": "El que pulló llega último y hace la marca", "mover": {"D1": [10, 10.5]}}
+  ],
+  "cierre": "Mejor un pull corto y adentro que largo y afuera",
+  "resumen": "Pull alto, salir todos juntos, hablar, y el que pulla hace la marca"
+}

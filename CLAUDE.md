@@ -12,6 +12,10 @@ Reglas de estilo:
 - Evitar "no es X, es Y" (decir directo "Es Y"), evitar "no es humo", y no usar guiones largos entre rayas (usar paréntesis o comas).
 - No afirmar que es equipo oficial de la Universidad Austral hasta que haya reconocimiento formal con Deportes.
 
+## Entrenamientos
+
+`Entrenamientos/` tiene la biblioteca de ejercicios por habilidad (una ficha `.md` por ejercicio, con animación `.json` → `.mp4`/`.png` hecha con `herramientas/animar_ejercicio.py`) y el sistema semanal: cada miércoles 20:00 una tarea programada local (`austral-entrenamientos-semana`) sigue `Entrenamientos/rutina-semanal.md`, arma el plan de viernes y sábado en `Entrenamientos/semanas/`, pushea a `main` y se lo manda por Gmail a Franco (fsernaglia01@gmail.com). Franco controla con `Entrenamientos/equipo.md` (gente y material), `feedback.md` y `programa.md`; pausa con un archivo `Entrenamientos/PAUSA`.
+
 ## Skills de Instagram (`.claude/skills/ig-*`)
 
 Instaladas desde github.com/Jakeschincariol/instagram-agent-skill (commit d03c56b, MIT). Las skills nombran rutas en `~/.claude/instagram/`; en este proyecto usá estas:

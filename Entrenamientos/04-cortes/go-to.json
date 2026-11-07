@@ -1,0 +1,23 @@
+{
+  "titulo": "Go-to: corte, atrapada, pivote y continuación",
+  "cancha": {"ancho": 20, "largo": 28},
+  "conos": [[5, 4], [5, 20], [15, 12]],
+  "jugadores": {
+    "L": {"equipo": "ataque", "pos": [5, 5], "label": "L"},
+    "C1": {"equipo": "ataque", "pos": [5, 19], "label": "1"},
+    "C2": {"equipo": "ataque", "pos": [5, 21], "label": "2"},
+    "C3": {"equipo": "ataque", "pos": [5, 23], "label": "3"},
+    "C4": {"equipo": "ataque", "pos": [5, 25], "label": "4"}
+  },
+  "disco": {"en": "L"},
+  "intro": "L con el disco, fila de cortadores arriba",
+  "pasos": [
+    {"dur": 1.1, "texto": "1 amaga hacia arriba", "mover": {"C1": [7, 22]}},
+    {"dur": 1.8, "texto": "1 vuelve hacia el cono de la derecha y recibe", "mover": {"C1": [14, 12]}, "pase": {"a": "C1", "inicio": 0.5, "curva": 1.0}},
+    {"dur": 1.2, "texto": "1 pivotea hacia arriba. 2 arranca su corte en ese momento", "mover": {"C2": [9, 23]}},
+    {"dur": 1.8, "texto": "2 corta hacia la zona libre y recibe la continuación", "mover": {"C2": [13, 25]}, "pase": {"a": "C2", "inicio": 0.4, "curva": 0.8}},
+    {"dur": 1.5, "texto": "Rotan: L a la fila, 1 de lanzador, 2 trae el disco", "mover": {"L": [5, 27], "C1": [5, 5], "C2": [5, 4.2], "C3": [5, 19], "C4": [5, 21]}, "rastro": false}
+  ],
+  "cierre": "El segundo corte arranca cuando el primero atrapa",
+  "resumen": "Corte en V, atrapada, pivote hacia adelante y pase de continuación al siguiente"
+}

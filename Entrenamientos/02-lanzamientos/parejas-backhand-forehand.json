@@ -1,0 +1,22 @@
+{
+  "titulo": "Parejas: backhand y forehand plano",
+  "cancha": {"ancho": 16, "largo": 14},
+  "jugadores": {
+    "A": {"equipo": "ataque", "pos": [3, 3], "label": "A"},
+    "B": {"equipo": "ataque", "pos": [3, 11], "label": "B"},
+    "C": {"equipo": "ataque", "pos": [8, 3], "label": "C"},
+    "D": {"equipo": "ataque", "pos": [8, 11], "label": "D"},
+    "E": {"equipo": "ataque", "pos": [13, 3], "label": "E"},
+    "F": {"equipo": "ataque", "pos": [13, 11], "label": "F"}
+  },
+  "disco": {"en": "C"},
+  "intro": "3 parejas a 6-8 m, todas en el mismo sentido",
+  "pasos": [
+    {"dur": 1.4, "texto": "Backhand: hombro al compañero, disco plano, golpe de muñeca", "pase": {"a": "D", "inicio": 0.1, "curva": 0.4}},
+    {"dur": 1.4, "texto": "Forehand: dos dedos, codo pegado, la muñeca hace el trabajo", "pase": {"a": "C", "inicio": 0.1, "curva": -0.4}},
+    {"dur": 1.4, "texto": "Apuntá al pecho. 10 seguidos sin que caiga", "pase": {"a": "D", "inicio": 0.1}},
+    {"dur": 1.6, "texto": "Cada 3 minutos, un paso atrás cada uno", "mover": {"C": [8, 2], "D": [8, 12]}, "rastro": false}
+  ],
+  "cierre": "3 min backhand + 3 min forehand, después un paso atrás",
+  "resumen": "Parejas a 6-8 m: backhand y forehand plano, apuntando al pecho"
+}
