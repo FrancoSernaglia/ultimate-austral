@@ -25,7 +25,7 @@ Usos: `reel`, `story`, `feed`, `carrusel`. Tramos en segundos (`desde-hasta`) de
 - **Evitar:** `12-20` (paneo movido, se ve una mochila); `30-35` (jugadores muy chicos en cuadro).
 - **Usos:** reel de invitación ("esto pasa los viernes"), story del viernes.
 - **Listas:** atardecer-pases.mp4 (tramos 36-46 y 0-4, sin audio).
-- **Usado:** nunca.
+- **Usado:** programado para 12/11/2026 (015-tu-lugar-en-la-cancha, reel).
 
 ### 20261023_184612.mp4
 - **Tipo:** video vertical 720x1280, 51.3 s, con audio ambiente. Importado el 25/10/2026.
@@ -62,7 +62,7 @@ Usos: `reel`, `story`, `feed`, `carrusel`. Tramos en segundos (`desde-hasta`) de
 - **Evitar:** nada puntual.
 - **Usos:** reel "así se tira un pase" (corto, funciona sin sonido), story.
 - **Listas:** lanzamiento-primer-plano.mp4 (tramo 0-6, sin audio).
-- **Usado:** nunca.
+- **Usado:** programado para 13/11/2026 (016-story-viernes, story).
 
 ### WhatsApp Video 2026-11-03 at 20.41.31 (1).mp4
 - **Tipo:** video horizontal 1024x576, 28.4 s, con audio. Importado el 03/11/2026.
@@ -73,7 +73,7 @@ Usos: `reel`, `story`, `feed`, `carrusel`. Tramos en segundos (`desde-hasta`) de
 - **Evitar:** `10-19` (jugadores muy chicos en cuadro).
 - **Usos:** story, reel de ambiente ("así se ve un viernes").
 - **Listas:** ejercicio-conos-grupo.mp4 (tramos 3-9 y 20-28, sin audio).
-- **Usado:** nunca.
+- **Usado:** programado para 14/11/2026 (017-story-sabado, story).
 
 ### WhatsApp Video 2026-11-03 at 20.41.31 (2).mp4
 - **Tipo:** video vertical 576x1024, 3.6 s, con audio. Importado el 03/11/2026.
@@ -147,7 +147,7 @@ Usos: `reel`, `story`, `feed`, `carrusel`. Tramos en segundos (`desde-hasta`) de
 - **Qué muestra:** cancha abierta con pasto y arboleda, cielo con sol fuerte y algunas personas chicas lejos en el campo. Todos varones.
 - **Usos:** fondo para una pieza gráfica ("esto es la cancha"), story.
 - **Listas:** cancha-abierta.jpg.
-- **Usado:** nunca.
+- **Usado:** programado para 10/11/2026 (014-como-es-la-cancha, feed).
 
 ## Lo que falta
 

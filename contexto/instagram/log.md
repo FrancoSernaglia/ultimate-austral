@@ -15,3 +15,7 @@ Una línea por pieza: fecha de publicación (ART) · id · formato · tema · fo
 - 2026-11-05 19:00 · 011-mujeres-al-ultimate · imagen · invitar: mixto, mujeres explícito, sin experiencia, gratis, horarios · banco-cc/commons-yourdon-17 (atribución en caption)
 - 2026-11-06 10:00 · 012-story-viernes · story · hoy entrenamos 17 hs · pexels-17119328-salto-estadio
 - 2026-11-07 10:00 · 013-story-sabado · story · hoy hay práctica 16 hs · banco-cc/commons-salto-vertical (atribución en la imagen; descarté pexels-20836274-defensa por nombre legible en camiseta y pexels-35090813-grupo-corriendo porque en el recorte story casi no se ve el disco)
+- 2026-11-10 19:00 · 014-como-es-la-cancha · imagen · enseñar: la cancha (100 x 37 m, zonas de gol de 18 m, la línea de gol no es gol, 7 contra 7) · propias/listas/cancha-abierta.jpg
+- 2026-11-12 19:00 · 015-tu-lugar-en-la-cancha · reel 9.5 s · invitar: mixto, mujeres explícito, sin experiencia, gratis, horarios · propias/listas/atardecer-pases.mp4 (tramos 7-10 y 0.4-7, atrapada al primer segundo)
+- 2026-11-13 10:00 · 016-story-viernes · story video 6 s · hoy entrenamos 17 hs · propias/listas/lanzamiento-primer-plano.mp4 (0-6)
+- 2026-11-14 10:00 · 017-story-sabado · story video 8 s · hoy hay práctica 16 hs · propias/listas/ejercicio-conos-grupo.mp4 (6-13.9)
