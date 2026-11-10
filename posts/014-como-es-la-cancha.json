@@ -6,6 +6,7 @@
   "medios": [
     "piezas/014-como-es-la-cancha.jpg"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "18102096728377762",
+  "publicado_utc": "2026-11-10T23:13:11Z"
 }
