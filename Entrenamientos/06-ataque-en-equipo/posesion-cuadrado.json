@@ -1,0 +1,23 @@
+{
+  "titulo": "Posesión en el cuadrado: 10 pases = punto",
+  "cancha": {"ancho": 15, "largo": 15},
+  "conos": [[0.5, 0.5], [14.5, 0.5], [0.5, 14.5], [14.5, 14.5]],
+  "jugadores": {
+    "A": {"equipo": "ataque", "pos": [5, 4], "label": "A"},
+    "B": {"equipo": "ataque", "pos": [10, 9], "label": "B"},
+    "C": {"equipo": "ataque", "pos": [3, 11], "label": "C"},
+    "DA": {"equipo": "defensa", "pos": [5.8, 5], "label": "D"},
+    "DB": {"equipo": "defensa", "pos": [9.4, 9.8], "label": "D"},
+    "DC": {"equipo": "defensa", "pos": [3.7, 11.6], "label": "D"}
+  },
+  "disco": {"en": "A"},
+  "intro": "3v3 en un cuadrado de 15 x 15, sin zona de gol",
+  "pasos": [
+    {"dur": 1.8, "texto": "B se ofrece cerca, C se abre lejos. La marca cuenta en voz alta", "mover": {"B": [11, 5], "DB": [11.6, 5.9], "C": [4, 13], "DC": [4.6, 12.4]}, "pase": {"a": "B", "inicio": 0.8, "curva": 0.6}},
+    {"dur": 1.9, "texto": "A pasa y se mueve al espacio libre", "mover": {"A": [6, 10], "DA": [6.6, 9.2], "DB": [10.4, 5.6]}, "pase": {"a": "A", "inicio": 0.8, "curva": -0.6}},
+    {"dur": 1.9, "texto": "Ahora C viene cerca y B se va lejos: siempre uno cerca y uno lejos", "mover": {"C": [10, 12], "DC": [9.5, 11.3], "B": [12, 2.5], "DB": [11.4, 3.2], "DA": [6.8, 10.7]}, "pase": {"a": "C", "inicio": 0.8, "curva": 0.5}},
+    {"dur": 1.5, "texto": "Pivotear, ver al libre y seguir contando pases", "mover": {"A": [3, 8], "DA": [3.6, 8.7], "DC": [9.4, 12.6]}}
+  ],
+  "cierre": "10 pases seguidos = 1 punto y el disco cambia de equipo",
+  "resumen": "Los dos sin disco se ofrecen en distintas direcciones: uno cerca, uno lejos. Nadie se queda parado"
+}

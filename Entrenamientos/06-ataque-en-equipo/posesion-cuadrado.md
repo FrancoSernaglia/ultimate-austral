@@ -8,7 +8,7 @@ discos: 1
 conos: 4
 duracion: 10-15 min
 intensidad: alta
-animacion: no
+animacion: posesion-cuadrado.json
 fuente: propia
 ---
 
