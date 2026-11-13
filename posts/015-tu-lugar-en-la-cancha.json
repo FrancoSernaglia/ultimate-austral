@@ -6,6 +6,7 @@
   "medios": [
     "piezas/015-tu-lugar-en-la-cancha.mp4"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "18115320278171122",
+  "publicado_utc": "2026-11-13T00:12:35Z"
 }
