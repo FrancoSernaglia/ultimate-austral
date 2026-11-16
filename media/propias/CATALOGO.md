@@ -36,7 +36,7 @@ Usos: `reel`, `story`, `feed`, `carrusel`. Tramos en segundos (`desde-hasta`) de
 - **Evitar:** `47-51` (primer plano de una cara mirando a cámara).
 - **Usos:** reel "tu primer pase" (primera persona, habla a quien nunca jugó), story.
 - **Listas:** primera-persona-pase.mp4 (tramos 13-19 y 36-41, sin audio).
-- **Usado:** nunca.
+- **Usado:** programado para 19/11/2026 (019-tu-primer-pase, reel).
 
 ### 20261024_183914.jpg
 - **Tipo:** foto vertical 3000x4000 (con EXIF girado). Importada el 25/10/2026.
@@ -45,7 +45,7 @@ Usos: `reel`, `story`, `feed`, `carrusel`. Tramos en segundos (`desde-hasta`) de
 - **Qué muestra:** foto grupal de 6 personas sonriendo con 3 discos, agachadas en el pasto, día nublado. Todos varones.
 - **Usos:** post de feed "quiénes somos" o para fijar en el perfil. El caption tiene que invitar a mujeres en forma explícita, porque en la foto son todos varones.
 - **Listas:** grupo-con-discos.jpg.
-- **Usado:** nunca.
+- **Usado:** programado para 17/11/2026 (018-el-pull, feed).
 
 ### austral-ultimate-flyer.jpg
 - **Tipo:** pieza gráfica 1080x1350 (el flyer viejo). Importado el 25/10/2026.
@@ -138,7 +138,7 @@ Usos: `reel`, `story`, `feed`, `carrusel`. Tramos en segundos (`desde-hasta`) de
 - **Evitar:** `15-22` (cámara al pasto, movido); `47-51` (nada de acción).
 - **Usos:** reel "tu primer pase" (cortado), story.
 - **Listas:** atrapada-brazo-en-alto.mp4 (tramo 40-47, sin audio).
-- **Usado:** nunca.
+- **Usado:** programado para 20/11/2026 (020-story-viernes, story).
 
 ### WhatsApp Image 2026-11-03 at 20.41.31.jpeg
 - **Tipo:** foto vertical 960x1280. Importada el 03/11/2026.

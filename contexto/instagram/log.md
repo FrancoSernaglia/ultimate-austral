@@ -19,3 +19,7 @@ Una línea por pieza: fecha de publicación (ART) · id · formato · tema · fo
 - 2026-11-12 19:00 · 015-tu-lugar-en-la-cancha · reel 9.5 s · invitar: mixto, mujeres explícito, sin experiencia, gratis, horarios · propias/listas/atardecer-pases.mp4 (tramos 7-10 y 0.4-7, atrapada al primer segundo)
 - 2026-11-13 10:00 · 016-story-viernes · story video 6 s · hoy entrenamos 17 hs · propias/listas/lanzamiento-primer-plano.mp4 (0-6)
 - 2026-11-14 10:00 · 017-story-sabado · story video 8 s · hoy hay práctica 16 hs · propias/listas/ejercicio-conos-grupo.mp4 (6-13.9)
+- 2026-11-17 19:00 · 018-el-pull · imagen · enseñar: el pull (señal de listos, la defensa no lo toca, brick, quien mete gol tira el pull) · propias/listas/grupo-con-discos.jpg
+- 2026-11-19 19:00 · 019-tu-primer-pase · reel 10.9 s · invitar: mixto, mujeres explícito, sin experiencia, gratis, viernes 17 hs · propias/listas/primera-persona-pase.mp4 (completo)
+- 2026-11-20 10:00 · 020-story-viernes · story video 6.9 s · hoy entrenamos 17 hs · propias/listas/atrapada-brazo-en-alto.mp4 (0-6.9)
+- (sin story del sábado 21/11: práctica a confirmar por fin de semana largo; fecha 16/11 corrida tardía, semana en curso)

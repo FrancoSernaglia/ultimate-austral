@@ -1,0 +1,11 @@
+{
+  "id": "020-story-viernes",
+  "fecha_utc": "2026-11-20T13:00:00Z",
+  "tipo": "story",
+  "caption": "",
+  "medios": [
+    "piezas/020-story-viernes.mp4"
+  ],
+  "estado": "pendiente",
+  "media_id_publicado": null
+}
