@@ -6,6 +6,7 @@
   "medios": [
     "piezas/018-el-pull.jpg"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "18034431686680985",
+  "publicado_utc": "2026-11-17T22:14:21Z"
 }
