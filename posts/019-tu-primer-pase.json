@@ -6,6 +6,7 @@
   "medios": [
     "piezas/019-tu-primer-pase.mp4"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "18144097921613774",
+  "publicado_utc": "2026-11-20T03:03:38Z"
 }
