@@ -105,7 +105,7 @@ Usos: `reel`, `story`, `feed`, `carrusel`. Tramos en segundos (`desde-hasta`) de
 - **Evitar:** `8-15` (parado sin acción).
 - **Usos:** story.
 - **Listas:** recepcion-de-cerca.mp4 (tramos 16-22 y 23-27, sin audio).
-- **Usado:** nunca.
+- **Usado:** programado para 27/11/2026 (023-story-viernes, story).
 
 ### WhatsApp Video 2026-11-03 at 20.41.30 (2).mp4
 - **Tipo:** video vertical 576x1024, 19.0 s, con audio. Importado el 03/11/2026.

@@ -23,3 +23,7 @@ Una línea por pieza: fecha de publicación (ART) · id · formato · tema · fo
 - 2026-11-19 19:00 · 019-tu-primer-pase · reel 10.9 s · invitar: mixto, mujeres explícito, sin experiencia, gratis, viernes 17 hs · propias/listas/primera-persona-pase.mp4 (completo)
 - 2026-11-20 10:00 · 020-story-viernes · story video 6.9 s · hoy entrenamos 17 hs · propias/listas/atrapada-brazo-en-alto.mp4 (0-6.9)
 - (sin story del sábado 21/11: práctica a confirmar por fin de semana largo; fecha 16/11 corrida tardía, semana en curso)
+- 2026-11-24 19:00 · 021-no-se-corre-con-el-disco · imagen · enseñar: no se corre con el disco (frenar sin cambiar de dirección, pivote, travel lo cobra la defensa y el juego sigue; WFDF 18.2) · pexels-17119330-atrapada-noche
+- 2026-11-26 19:00 · 022-buscamos-jugadoras · imagen · invitar: mixto, mujeres explícito, sin experiencia, gratis, viernes 17 y sábado 16 hs · pexels-8944642-mujer-lanzando (sin reel: los clips propios sin usar solo tienen uso story)
+- 2026-11-27 10:00 · 023-story-viernes · story video 9.9 s · hoy entrenamos 17 hs · propias/listas/recepcion-de-cerca.mp4 (completo)
+- 2026-11-28 10:00 · 024-story-sabado · story · hoy hay práctica 16 hs · unsplash-DRZcbiXINwg-salto-doble (lanzamientos-conos.mp4 dura 4 s, menos que el mínimo de 5 s para story; descarté pexels-35090813-grupo-corriendo porque parece flag football sin disco y pexels-20836277-salto-disputa por nombre legible en camiseta)
