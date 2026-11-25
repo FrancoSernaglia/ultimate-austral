@@ -6,6 +6,7 @@
   "medios": [
     "piezas/021-no-se-corre-con-el-disco.jpg"
   ],
-  "estado": "pendiente",
-  "media_id_publicado": null
+  "estado": "publicado",
+  "media_id_publicado": "18257724292308643",
+  "publicado_utc": "2026-11-25T02:20:20Z"
 }
