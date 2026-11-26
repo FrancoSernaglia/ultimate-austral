@@ -12,4 +12,5 @@ Progresión:
 |---|---|---|
 | `corte-en-v.md` | inicial | 10-15 |
 | `go-to.md` | inicial-intermedio | 15 |
+| `timing-y-despejar.md` | inicial-intermedio | 15-20 |
 | `corte-profundo.md` | intermedio | 10-15 |

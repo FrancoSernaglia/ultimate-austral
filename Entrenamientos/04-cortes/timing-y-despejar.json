@@ -1,0 +1,23 @@
+{
+  "titulo": "Timing y despejar: cortá cuando el lanzador está listo",
+  "cancha": {"ancho": 20, "largo": 26},
+  "conos": [[10, 4], [5, 19], [15, 19]],
+  "jugadores": {
+    "L": {"equipo": "ataque", "pos": [10, 5], "label": "L"},
+    "A1": {"equipo": "ataque", "pos": [5, 18], "label": "1"},
+    "A2": {"equipo": "ataque", "pos": [5, 20.5], "label": "3"},
+    "B1": {"equipo": "ataque", "pos": [15, 18], "label": "2"},
+    "B2": {"equipo": "ataque", "pos": [15, 20.5], "label": "4"}
+  },
+  "disco": {"en": "L"},
+  "intro": "L con el disco, dos filas arriba",
+  "pasos": [
+    {"dur": 1.0, "texto": "1 amaga hacia arriba", "mover": {"A1": [6, 21]}},
+    {"dur": 1.4, "texto": "1 vuelve al disco por la izquierda. L no se la tira", "mover": {"A1": [7, 12]}},
+    {"dur": 1.6, "texto": "1 despeja hacia el costado. 2 arranca en ese momento", "mover": {"A1": [2, 15], "B1": [14, 21]}},
+    {"dur": 1.8, "texto": "2 vuelve al espacio libre y recibe", "mover": {"A1": [2, 19], "B1": [11, 11]}, "pase": {"a": "B1", "inicio": 0.45, "curva": -0.8}},
+    {"dur": 1.5, "texto": "2 devuelve a L y cada uno va a la otra fila", "mover": {"A1": [15, 23], "B1": [5, 23]}, "pase": {"a": "L", "inicio": 0.1, "curva": 0.5}, "rastro": false}
+  ],
+  "cierre": "Si no te la dan, despejá: el espacio es del siguiente",
+  "resumen": "Corte en V del 1 sin pase, despeje al costado, corte del 2 al espacio que quedó libre y pase"
+}
